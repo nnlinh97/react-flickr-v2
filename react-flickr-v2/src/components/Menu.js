@@ -74,7 +74,7 @@ class Menu extends Component {
             this.setState({
                 tag: ''
             })
-            history.push(`/photos/tags/${tag.replace(/ /g, "")}`);
+            history.push(`/photos/tags/${tag}`);
         }
     }
 

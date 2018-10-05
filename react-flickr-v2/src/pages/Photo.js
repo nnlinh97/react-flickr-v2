@@ -39,7 +39,7 @@ class Photo extends Component {
         let owner = _.result(photo, 'owner.username');
         let views = _.result(photo, 'views');
         let listTags = tags.map((tag, index) => {
-            let url = `/photos/tags/${tag.raw.replace(/ /g, '')}`;
+            let url = `/photos/tags/${tag.raw}`;
             return (
                 <Link key={index} to={url}>
                     <span className="w3-tag w3-dark-grey w3-small w3-margin-bottom">{tag.raw}</span>
