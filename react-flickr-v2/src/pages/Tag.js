@@ -74,7 +74,7 @@ class Tag extends Component {
         var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
         var scrollHeight = (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight;
         var clientHeight = document.documentElement.clientHeight || window.innerHeight;
-        var scrolledToBottom = Math.ceil(scrollTop + clientHeight) >= scrollHeight - 300;
+        var scrolledToBottom = Math.ceil(scrollTop + clientHeight) >= scrollHeight;
         if (scrolledToBottom && this.state.nextPage && !this.state.isLoading) {
             this.onLoadMore();
         }
